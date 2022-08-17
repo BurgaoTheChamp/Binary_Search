@@ -5,9 +5,8 @@
 // template<typename anyType>
 void binarySearch(std::vector<int>& vec /*std::vector<int> vec*/, int val/*anyType val*/){
     // anyType min = 0;
-    int min = 0;
     // anyType max = vec.size();
-    int max = vec.size();
+    int min = 0, max = vec.size();
     while (1)
     {
         // anyType middle = (min + max)/2;
