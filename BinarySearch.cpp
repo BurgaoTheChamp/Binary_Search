@@ -3,7 +3,7 @@
 #include <algorithm>
 
 // template<typename anyType>
-void binarySearch(std::vector<int>& vec /*std::vector<int> vec*/, int val/*anyType val*/){
+void binarySearch(std::vector<uint64_t>& vec /*std::vector<int> vec*/, uint64_t val/*anyType val*/){
     // anyType min = 0;
     // anyType max = vec.size();
     int min = 0, max = vec.size();
@@ -37,7 +37,7 @@ int main(){
     int n, x;
     std::cout << "Insert the size of the array here: ";
     std::cin >> n;
-    std::vector<int> array(n);
+    std::vector<uint64_t> array(n);
     std::cout << "Insert the array here (it will be sorted): ";
 
     for (int i = 0; i < n; i++)
