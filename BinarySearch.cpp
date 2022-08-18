@@ -28,15 +28,17 @@ void binarySearch(std::vector<uint64_t>& vec /*std::vector<int> vec*/, uint64_t 
             std::cout << "Data not found";
             break;
         }
-    }
-    
+    }    
 }
 
 int main(){
 
-    int n, x;
+    int n; 
+    uint64_t x;
+
     std::cout << "Insert the size of the array here: ";
     std::cin >> n;
+    
     std::vector<uint64_t> array(n);
     std::cout << "Insert the array here (it will be sorted): ";
 
