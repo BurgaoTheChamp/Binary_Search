@@ -7,6 +7,7 @@ void binarySearch(std::vector<uint64_t>& vec /*std::vector<int> vec*/, uint64_t 
     // anyType min = 0;
     // anyType max = vec.size();
     int min = 0, max = vec.size();
+    
     while (1)
     {
         // anyType middle = (min + max)/2;
@@ -38,7 +39,7 @@ int main(){
 
     std::cout << "Insert the size of the array here: ";
     std::cin >> n;
-    
+
     std::vector<uint64_t> array(n);
     std::cout << "Insert the array here (it will be sorted): ";
 
