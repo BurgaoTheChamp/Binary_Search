@@ -6,12 +6,13 @@
 void binarySearch(std::vector<uint64_t>& vec /*std::vector<int> vec*/, uint64_t val/*anyType val*/){
     // anyType min = 0;
     // anyType max = vec.size();
-    int min = 0, max = vec.size();
+    uint64_t min = 0, max = vec.size();
     
     while (1)
     {
         // anyType middle = (min + max)/2;
-        int middle = (min + max)/2;
+        // uint64_t middle = (min + max)/2;
+        uint64_t middle = min + (max - min)/2; //to avoid integer overflow
 
         //std::cout << min << " " << max << std::endl;
         if (vec[middle] == val){
@@ -34,7 +35,7 @@ void binarySearch(std::vector<uint64_t>& vec /*std::vector<int> vec*/, uint64_t 
 
 int main(){
 
-    int n; 
+    uint64_t n; 
     uint64_t x;
 
     std::cout << "Insert the size of the array here: ";
@@ -43,7 +44,7 @@ int main(){
     std::vector<uint64_t> array(n);
     std::cout << "Insert the array here (it will be sorted): ";
 
-    for (int i = 0; i < n; i++)
+    for (uint64_t i = 0; i < n; i++)
     {
         std::cin >> array[i];
     }
@@ -52,7 +53,7 @@ int main(){
 
     std::cout << "The sorted array is: " << std::endl;
 
-    for (int i = 0; i < n; i++)
+    for (uint64_t i = 0; i < n; i++)
     {
         std::cout << array[i] << std::endl;
     }
